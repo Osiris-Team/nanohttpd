@@ -42,8 +42,8 @@ import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.request.Method;
-import org.nanohttpd.protocols.http.response.Response;
+import org.nanohttpd.core.http.request.Method;
+import org.nanohttpd.core.http.response.Response;
 
 public class HttpGetRequestTest extends HttpServerTest {
 

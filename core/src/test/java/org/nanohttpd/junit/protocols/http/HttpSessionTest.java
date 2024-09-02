@@ -41,7 +41,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
+import org.nanohttpd.core.http.HTTPSession;
 
 public class HttpSessionTest extends HttpServerTest {
 

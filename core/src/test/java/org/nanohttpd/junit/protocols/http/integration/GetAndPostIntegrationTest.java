@@ -36,7 +36,6 @@ package org.nanohttpd.junit.protocols.http.integration;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -58,11 +57,11 @@ import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.request.Method;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.request.Method;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 5/19/13 at 5:36 PM

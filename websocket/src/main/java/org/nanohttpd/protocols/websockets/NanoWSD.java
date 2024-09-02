@@ -38,11 +38,11 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
-import org.nanohttpd.util.IHandler;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
+import org.nanohttpd.core.util.IHandler;
 
 public abstract class NanoWSD extends NanoHTTPD {
 
@@ -76,8 +76,8 @@ public abstract class NanoWSD extends NanoHTTPD {
     /**
      * Translates the specified byte array into Base64 string.
      * <p>
-     * Android has android.util.Base64, sun has sun.misc.Base64Encoder, Java 8
-     * hast java.util.Base64, I have this from stackoverflow:
+     * Android has android.util.Base64, sun has sun.misc.Base64Encoder, Java 8 hast
+     * java.util.Base64, I have this from stackoverflow:
      * http://stackoverflow.com/a/4265472
      * </p>
      * 

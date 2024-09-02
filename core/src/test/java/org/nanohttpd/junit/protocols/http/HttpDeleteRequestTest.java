@@ -37,9 +37,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
 
 public class HttpDeleteRequestTest extends HttpServerTest {
 

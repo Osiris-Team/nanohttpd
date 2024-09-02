@@ -45,8 +45,8 @@ import org.apache.commons.fileupload.FileUpload;
 import org.apache.commons.fileupload.FileUploadBase;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.UploadContext;
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.request.Method;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.request.Method;
 
 /**
  * @author victor & ritchieGitHub

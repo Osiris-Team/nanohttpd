@@ -42,9 +42,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.Response;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.response.Response;
 
 public class ShutdownTest {
 

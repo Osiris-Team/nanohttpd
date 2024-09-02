@@ -58,16 +58,13 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.response.Status;
 import org.nanohttpd.router.RouterNanoHTTPD;
 import org.nanohttpd.router.RouterNanoHTTPD.DefaultRoutePrioritizer;
-import org.nanohttpd.router.RouterNanoHTTPD.Error404UriHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.GeneralHandler;
-import org.nanohttpd.router.RouterNanoHTTPD.IndexHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.InsertionOrderRoutePrioritizer;
 import org.nanohttpd.router.RouterNanoHTTPD.NotImplementedHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.ProvidedPriorityRoutePrioritizer;
-import org.nanohttpd.router.RouterNanoHTTPD.StaticPageHandler;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResource;
 import org.nanohttpd.router.RouterNanoHTTPD.UriResponder;
 import org.nanohttpd.router.RouterNanoHTTPD.UriRouter;
@@ -149,7 +146,8 @@ public class TestNanolets {
         entity = response.getEntity();
         string = new String(readContents(entity), "UTF-8");
         Assert.assertEquals(
-                "<html><body>User handler. Method: DELETE<br><h1>Uri parameters:</h1><div> Param: id&nbsp;Value: blabla</div><h1>Query parameters:</h1></body></html>", string);
+                "<html><body>User handler. Method: DELETE<br><h1>Uri parameters:</h1><div> Param: id&nbsp;Value: blabla</div><h1>Query parameters:</h1></body></html>",
+                string);
         response.close();
     }
 
@@ -293,7 +291,7 @@ public class TestNanolets {
     @Test
     public void uriToString() throws Exception {
         Assert.assertEquals(//
-                "UrlResource{uri='photos/:customer_id/:photo_id', urlParts=[customer_id, photo_id]}",//
+                "UrlResource{uri='photos/:customer_id/:photo_id', urlParts=[customer_id, photo_id]}", //
                 new UriResource("/photos/:customer_id/:photo_id", 100, GeneralHandler.class).toString());
     }
 

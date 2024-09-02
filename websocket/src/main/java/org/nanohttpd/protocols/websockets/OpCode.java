@@ -34,6 +34,7 @@ package org.nanohttpd.protocols.websockets;
  */
 
 public enum OpCode {
+
     Continuation(0),
     Text(1),
     Binary(2),

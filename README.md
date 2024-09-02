@@ -8,6 +8,11 @@ It is being developed at Github and uses Apache Maven for builds & unit testing:
  * Coverage Status: [![Coverage Status](https://coveralls.io/repos/NanoHttpd/nanohttpd/badge.svg)](https://coveralls.io/r/NanoHttpd/nanohttpd)
  * Current central released version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.nanohttpd/nanohttpd/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.nanohttpd/nanohttpd)
 
+## Changes in this fork [![](https://jitpack.io/v/Osiris-Team/nanohttpd.svg)](https://jitpack.io/#Osiris-Team/nanohttpd)
+- Updated pom.xml and some dependencies
+- Renamed package to make it compatible with java 9+ modules
+- [Click here for Maven/Gradle/Sbt/Leinigen instructions](https://jitpack.io/#Osiris-Team/nanohttpd/LATEST) (Java 8 or higher required).
+
 ## Quickstart
 
 We'll create a custom HTTP server project using Maven for build/dep system. This tutorial assumes you are using a Unix variant and a shell. First, install Maven and Java SDK if not already installed. Then run:

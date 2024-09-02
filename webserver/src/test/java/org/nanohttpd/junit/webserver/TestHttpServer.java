@@ -195,8 +195,8 @@ public class TestHttpServer extends AbstractTestHttpServer {
             CloseableHttpClient httpClient = HttpClients.createDefault();
             HttpGet httpGet = new HttpGet("http://localhost:9090/../test.html");
             response = httpClient.execute(httpGet);
-            Assert.assertEquals("The response status should be 403(Forbidden), " + "since the server won't serve requests with '../' due to security reasons", 403, response
-                    .getStatusLine().getStatusCode());
+            Assert.assertEquals("The response status should be 403(Forbidden), " + "since the server won't serve requests with '../' due to security reasons", 403,
+                    response.getStatusLine().getStatusCode());
         } finally {
             if (response != null) {
                 response.close();
@@ -273,8 +273,8 @@ public class TestHttpServer extends AbstractTestHttpServer {
             httpGet.addHeader("range", "bytes=1000-");
             CloseableHttpClient httpClient = HttpClients.createDefault();
             response = httpClient.execute(httpGet);
-            Assert.assertEquals("Response status for a request with 'range' header value which exceeds file length should be RANGE_NOT_SATISFIABLE(416)", 416, response
-                    .getStatusLine().getStatusCode());
+            Assert.assertEquals("Response status for a request with 'range' header value which exceeds file length should be RANGE_NOT_SATISFIABLE(416)", 416,
+                    response.getStatusLine().getStatusCode());
             Assert.assertEquals("The 'Content-Range' header should contain the correct lengths and offsets based on the range served", "bytes */84",
                     response.getHeaders("Content-Range")[0].getValue());
         } finally {
@@ -317,8 +317,8 @@ public class TestHttpServer extends AbstractTestHttpServer {
             httpGet.addHeader("if-none-match", "*");
             CloseableHttpClient httpClient = HttpClients.createDefault();
             response = httpClient.execute(httpGet);
-            Assert.assertEquals("The response status to a reqeuest with 'if-non-match=*' header should be NOT_MODIFIED(304), if the file exists", 304, response
-                    .getStatusLine().getStatusCode());
+            Assert.assertEquals("The response status to a reqeuest with 'if-non-match=*' header should be NOT_MODIFIED(304), if the file exists", 304,
+                    response.getStatusLine().getStatusCode());
         } finally {
             if (response != null) {
                 response.close();

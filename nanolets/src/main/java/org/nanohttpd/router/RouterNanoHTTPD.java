@@ -51,11 +51,11 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.IStatus;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.response.IStatus;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
 
 /**
  * @author vnnv
@@ -115,8 +115,8 @@ public class RouterNanoHTTPD extends NanoHTTPD {
     }
 
     /**
-     * General nanolet to inherit from if you provide text or html data, only
-     * fixed size responses will be generated.
+     * General nanolet to inherit from if you provide text or html data, only fixed
+     * size responses will be generated.
      */
     public static abstract class DefaultHandler extends DefaultStreamHandler {
 
@@ -574,11 +574,11 @@ public class RouterNanoHTTPD extends NanoHTTPD {
         }
 
         /**
-         * Search in the mappings if the given url matches some of the rules If
-         * there are more than one marches returns the rule with less parameters
-         * e.g. mapping 1 = /user/:id mapping 2 = /user/help if the incoming uri
-         * is www.example.com/user/help - mapping 2 is returned if the incoming
-         * uri is www.example.com/user/3232 - mapping 1 is returned
+         * Search in the mappings if the given url matches some of the rules If there
+         * are more than one marches returns the rule with less parameters e.g. mapping
+         * 1 = /user/:id mapping 2 = /user/help if the incoming uri is
+         * www.example.com/user/help - mapping 2 is returned if the incoming uri is
+         * www.example.com/user/3232 - mapping 1 is returned
          * 
          * @param url
          * @return

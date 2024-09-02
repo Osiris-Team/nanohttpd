@@ -36,9 +36,9 @@ package org.nanohttpd.webserver;
 import java.io.ByteArrayInputStream;
 import java.util.Map;
 
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 9/15/13 at 2:52 PM

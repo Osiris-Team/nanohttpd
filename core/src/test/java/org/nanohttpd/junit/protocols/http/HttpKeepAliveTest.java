@@ -40,8 +40,8 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
-import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManager;
+import org.nanohttpd.core.http.HTTPSession;
+import org.nanohttpd.core.http.tempfiles.DefaultTempFileManager;
 
 public class HttpKeepAliveTest extends HttpServerTest {
 
@@ -77,9 +77,9 @@ public class HttpKeepAliveTest extends HttpServerTest {
     }
 
     /**
-     * Issue the given request many times to check whether an error occurs. For
-     * this test, a small stack size is used, since a stack overflow is among
-     * the possible errors.
+     * Issue the given request many times to check whether an error occurs. For this
+     * test, a small stack size is used, since a stack overflow is among the
+     * possible errors.
      * 
      * @param request
      *            The request to issue

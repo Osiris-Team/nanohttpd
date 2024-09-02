@@ -41,7 +41,7 @@ import java.io.ByteArrayOutputStream;
 import java.net.InetAddress;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
+import org.nanohttpd.core.http.HTTPSession;
 
 public class HttpSessionHeadersTest extends HttpServerTest {
 

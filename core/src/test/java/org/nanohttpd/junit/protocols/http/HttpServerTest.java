@@ -65,13 +65,13 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.NanoHTTPD;
-import org.nanohttpd.protocols.http.request.Method;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.tempfiles.DefaultTempFileManager;
-import org.nanohttpd.protocols.http.tempfiles.ITempFileManager;
+import org.nanohttpd.core.http.HTTPSession;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.NanoHTTPD;
+import org.nanohttpd.core.http.request.Method;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.tempfiles.DefaultTempFileManager;
+import org.nanohttpd.core.http.tempfiles.ITempFileManager;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 3/10/13 at 8:32 PM

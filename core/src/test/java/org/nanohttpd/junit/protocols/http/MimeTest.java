@@ -35,7 +35,7 @@ package org.nanohttpd.junit.protocols.http;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.nanohttpd.protocols.http.NanoHTTPD;
+import org.nanohttpd.core.http.NanoHTTPD;
 
 public class MimeTest {
 

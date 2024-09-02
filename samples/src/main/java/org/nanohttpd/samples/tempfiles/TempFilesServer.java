@@ -37,12 +37,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.nanohttpd.protocols.http.tempfiles.DefaultTempFile;
-import org.nanohttpd.protocols.http.tempfiles.ITempFile;
-import org.nanohttpd.protocols.http.tempfiles.ITempFileManager;
+import org.nanohttpd.core.http.tempfiles.DefaultTempFile;
+import org.nanohttpd.core.http.tempfiles.ITempFile;
+import org.nanohttpd.core.http.tempfiles.ITempFileManager;
 import org.nanohttpd.samples.http.DebugServer;
-import org.nanohttpd.util.IFactory;
-import org.nanohttpd.util.ServerRunner;
+import org.nanohttpd.core.util.IFactory;
+import org.nanohttpd.core.util.ServerRunner;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 3/9/13 at 12:47 AM

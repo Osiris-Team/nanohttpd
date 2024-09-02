@@ -39,7 +39,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.Random;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.content.Cookie;
+import org.nanohttpd.core.http.content.Cookie;
 
 public class CookieTest {
 
@@ -60,8 +60,8 @@ public class CookieTest {
     @Test
     public void testCookieWithExplicitExpirationTime() {
         Cookie cookie = new Cookie("CookieKey", "CookieValue", 40);
-        assertFalse("The default 30 days expires string should not be avaialbe in the cookie header" + " because the expiry has been specified as 40 days", cookie
-                .getHTTPHeader().contains(Cookie.getHTTPTime(30)));
+        assertFalse("The default 30 days expires string should not be avaialbe in the cookie header" + " because the expiry has been specified as 40 days",
+                cookie.getHTTPHeader().contains(Cookie.getHTTPTime(30)));
         assertTrue("Cookie header should contain cookie key", cookie.getHTTPHeader().contains("CookieKey"));
         assertTrue("Cookie header should contain cookie value", cookie.getHTTPHeader().contains("CookieValue"));
     }

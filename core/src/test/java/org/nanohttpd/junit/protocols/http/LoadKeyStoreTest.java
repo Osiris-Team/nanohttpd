@@ -44,7 +44,7 @@ import javax.net.ssl.SSLServerSocketFactory;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import org.nanohttpd.protocols.http.NanoHTTPD;
+import org.nanohttpd.core.http.NanoHTTPD;
 
 public class LoadKeyStoreTest {
 

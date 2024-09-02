@@ -46,18 +46,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 
-import org.nanohttpd.protocols.http.IHTTPSession;
-import org.nanohttpd.protocols.http.response.IStatus;
-import org.nanohttpd.protocols.http.response.Response;
-import org.nanohttpd.protocols.http.response.Status;
+import org.nanohttpd.core.http.IHTTPSession;
+import org.nanohttpd.core.http.response.IStatus;
+import org.nanohttpd.core.http.response.Response;
+import org.nanohttpd.core.http.response.Status;
 import org.nanohttpd.router.RouterNanoHTTPD;
-import org.nanohttpd.router.RouterNanoHTTPD.DefaultHandler;
-import org.nanohttpd.router.RouterNanoHTTPD.DefaultStreamHandler;
-import org.nanohttpd.router.RouterNanoHTTPD.GeneralHandler;
-import org.nanohttpd.router.RouterNanoHTTPD.StaticPageHandler;
-import org.nanohttpd.router.RouterNanoHTTPD.UriResource;
-import org.nanohttpd.router.RouterNanoHTTPD.UriResponder;
-import org.nanohttpd.util.ServerRunner;
+import org.nanohttpd.core.util.ServerRunner;
 
 public class AppNanolets extends RouterNanoHTTPD {
 

@@ -48,9 +48,9 @@ import java.util.Set;
 import java.util.TimeZone;
 
 import org.junit.Test;
-import org.nanohttpd.protocols.http.HTTPSession;
-import org.nanohttpd.protocols.http.content.CookieHandler;
-import org.nanohttpd.protocols.http.response.Response;
+import org.nanohttpd.core.http.HTTPSession;
+import org.nanohttpd.core.http.content.CookieHandler;
+import org.nanohttpd.core.http.response.Response;
 
 public class CookieHandlerTest extends HttpServerTest {
 

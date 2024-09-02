@@ -38,7 +38,7 @@ import java.io.IOException;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.After;
 import org.junit.Before;
-import org.nanohttpd.protocols.http.NanoHTTPD;
+import org.nanohttpd.core.http.NanoHTTPD;
 
 /**
  * @author Paul S. Hawke (paul.hawke@gmail.com) On: 9/2/13 at 10:02 PM
